@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+
+  <div class="container theme1">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Chunyou Su</a>.
+    </div>
+
+    <div class="calculator">
+      <div class="calculator-header">
+        <h1>calc</h1>
+
+        <div class="theme-container">
+          <h5>THEME</h5>
+          <div class="themes">
+
+            <div class="theme">
+              <input type="radio" name="theme" id="theme1" value="1">
+              <label for="theme1">1</label>
+            </div>
+
+            <div class="theme">
+              <input type="radio" name="theme" id="theme2" value="2">
+              <label for="theme2">2</label>
+            </div>
+
+            <div class="theme">
+              <input type="radio" name="theme" id="theme3" value="3">
+              <label for="theme3">3</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+        <div class="upper-display">
+          <div class="previous-number"></div>
+          <div class="operator"></div>
+        </div>
+        <div class="current-number">0</div>
+      </div>
+
+      <div class="key-pad">
+        <button class="number" data-num="7">7</button>
+        <button class="number" data-num="8">8</button>
+        <button class="number" data-num="9">9</button>
+        <button class="del-button">DEL</button>
+        <button class="number" data-num="4">4</button>
+        <button class="number" data-num="5">5</button>
+        <button class="number" data-num="6">6</button>
+        <button class="number" data-op="+">+</button>
+        <button class="number" data-num="1">1</button>
+        <button class="number" data-num="2">2</button>
+        <button class="number" data-num="3">3</button>
+        <button data-op="-">-</button>
+        <button class="decimal">.</button>
+        <button class="number" data-num="0">0</button>
+        <button data-op="/">/</button>
+        <button data-op="x">&times;</button>
+        <button class="reset-button">RESET</button>
+        <button class="equal-button">=</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

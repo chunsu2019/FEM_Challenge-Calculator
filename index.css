@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --keypad-backgrouund: hsl(224, 36%, 15%);
+
+  --del-reset-key-background: hsl(225, 21%, 49%);
+  --dr-key-shadow: hsl(224, 28%, 35%);
+
+  --equal-and-toggle-key-background: hsl(6, 63%, 50%);
+  --eat-key-shadow: hsl(6, 70%, 34%);
+
+  --normal-key-background: hsl(30, 25%, 89%);
+  --normal-key-shadow: hsl(28, 16%, 65%);
+
+  --normal-key-color: hsl(198, 20%, 13%);
+  --header-text-color: rgb(255, 255, 255);
+  --del-reset-key-color: rgb(255, 255, 255);
+  --equal-key-color: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  background-color: var(--main-background);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .calculator {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  min-width: 357px;
+}
+.container .calculator .calculator-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--header-text-color);
+}
+.container .calculator .calculator-header .theme-container {
+  display: flex;
+  align-items: center;
+}
+.container .calculator .calculator-header .theme-container h5 {
+  margin-right: 20px;
+}
+.container .calculator .calculator-header .theme-container .themes {
+  display: flex;
+  border: solid;
+  gap: 4px;
+  align-items: center;
+  padding: 1px;
+  background: var(--toggle-background);
+  color: var(--toggle-background);
+  border-radius: 100px;
+}
+.container .calculator .calculator-header .theme-container .theme {
+  position: relative;
+  display: flex;
+}
+.container .calculator .calculator-header .theme-container input:checked {
+  background: transparent;
+  background: var(--equal-and-toggle-key-background);
+  accent-color: var(--equal-and-toggle-key-background);
+  opacity: 1;
+}
+.container .calculator .calculator-header .theme-container input {
+  opacity: 0;
+}
+.container .calculator .calculator-header .theme-container label {
+  position: absolute;
+  left: 2px;
+  top: -22px;
+  font-size: 15px;
+  color: var(--header-text-color);
+}
+.container .calculator .display {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+  border-radius: 10px;
+  background: var(--screen-background);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: var(--header-text-color);
+  padding-right: 30px;
+  overflow-x: hidden;
+}
+.container .calculator .display .upper-display {
+  display: flex;
+  margin-right: 10px;
+  gap: 5px;
+  font-size: 15px;
+}
+.container .calculator .display .current-number {
+  font-size: 32px;
+}
+.container .calculator .key-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 50px);
+  grid-row-end: auto;
+  background-color: var(--keypad-backgrouund);
+  border-radius: 10px;
+  padding: 25px;
+  gap: 30px;
+  justify-content: center;
+}
+.container .calculator .key-pad button {
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--normal-key-color);
+  background: var(--normal-key-background);
+  box-shadow: 0px 7px var(--normal-key-shadow);
+}
+.container .calculator .key-pad button.number {
+  font-size: 32px;
+  font-weight: 700;
+}
+.container .calculator .key-pad .reset-button,
+.container .calculator .key-pad .equal-button {
+  grid-column: span 2;
+}
+.container .calculator .key-pad .reset-button,
+.container .calculator .key-pad .del-button {
+  background: var(--del-reset-key-background);
+  color: var(--del-reset-key-color);
+  box-shadow: 0px 7px var(--dr-key-shadow);
+}
+.container .calculator .key-pad .equal-button {
+  background: var(--equal-and-toggle-key-background);
+  box-shadow: 0px 7px var(--eat-key-shadow);
+  color: var(--equal-key-color);
+}
+
+.attribution {
+  position: fixed;
+  font-size: 18px;
+  top: 10px;
+  color: var(--header-text-color);
+}
+
+.attribution a {
+  color: red;
+} /*# sourceMappingURL=index.css.map */
