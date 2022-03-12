@@ -24,21 +24,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![cal1](https://user-images.githubusercontent.com/48263126/157996759-f70b790b-699e-4707-99b6-b2e706745ddb.PNG)
+![cal2](https://user-images.githubusercontent.com/48263126/157996758-01b7ec63-e7f4-417b-950c-e67f590c5119.PNG)
+![image](https://user-images.githubusercontent.com/48263126/157996739-b525b680-dbb5-4d40-bfc4-28c6c9cd65e1.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- 
 
 ### Built with
 
